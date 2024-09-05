@@ -1,0 +1,173 @@
+{
+    "cardKey": "amex-deltareserve",
+    "cardIssuer": "American Express",
+    "cardName": "Delta SkyMiles® Reserve American Express",
+    "cardNetwork": "American Express",
+    "cardType": "Personal",
+    "cardUrl": "https://www.americanexpress.com/us/credit-cards/card/delta-skymiles-reserve-american-express-card",
+    "annualFee": 650,
+    "fxFee": 0,
+    "isFxFee": 0,
+    "creditRange": "Good to Excellent",
+    "baseSpendAmount": 1,
+    "baseSpendEarnType": "Delta SkyMiles",
+    "baseSpendEarnCategory": "Airline",
+    "baseSpendEarnCurrency": "miles",
+    "baseSpendEarnValuation": 1.2,
+    "baseSpendEarnIsCash": 0,
+    "baseSpendEarnCashValue": 0,
+    "isSignupBonus": 1,
+    "signupBonusAmount": "60000",
+    "signupBonusType": "Delta SkyMiles",
+    "signupBonusCategory": "Airline",
+    "signUpBonusItem": "miles",
+    "signupBonusSpend": 5000,
+    "signupBonusLength": 6,
+    "signupBonusLengthPeriod": "Months",
+    "signupAnnualFee": 650,
+    "isSignupAnnualFeeWaived": 0,
+    "signupStatementCredit": 0,
+    "signupBonusDesc": "Earn 60,000 Bonus Miles after spending $5,000 in purchases on your new Card in your first 6 months of Card Membership.",
+    "trustedTraveler": "Fee Credit for Global Entry or TSA PreCheck®: Receive $100 back for Global Entry or $85 back for TSA PreCheck® after you apply through any Official Enrollment Provider. If approved for Global Entry, at no additional charge, you will receive access to TSA PreCheck.",
+    "isTrustedTraveler": 1,
+    "loungeAccess": "Enjoy complimentary access to the Delta Sky Club® when traveling on a same-day Delta-marketed or Delta-operated flight. You will receive four Delta Sky Club One-Time Guest Passes each year. After that, you may bring up to two guests at a per-visit rate of $50 per person, per location.",
+    "isLoungeAccess": 1,
+    "freeHotelNight": "",
+    "isFreeHotelNight": 0,
+    "freeCheckedBag": "First Checked Bag Free - As a benefit of Card Membership, you can check your first bag free on Delta flights booked with your Card. You can save up to $60 on a round-trip Delta flight per person. For a family of four that's a potential savings of up to $240 per round-trip flight.\r\n",
+    "isFreeCheckedBag": 1,
+    "isActive": 1,
+    "benefit": [
+        {
+            "benefitTitle": "$120 Rideshare Credit",
+            "benefitDesc": "Get rewarded to and from the airport. Enroll and earn up to $10 in statement credits each month after using your Card on U.S. rideshare purchases with select providers. That's up to $120 back each year."
+        },
+        {
+            "benefitTitle": "$200 Delta Stays Credit",
+            "benefitDesc": "Elevate your travel experience with an annual statement credit of up to $200 after using your Card to book prepaid hotels or vacation rentals through Delta Stays on delta.com."
+        },
+        {
+            "benefitTitle": "$240 Resy Credit",
+            "benefitDesc": "Discover restaurants to love on your upcoming trip. With your enrolled Delta SkyMiles Reserve American Express Card, you can earn up to $20 per month in statement credits on eligible purchases with U.S. Resy restaurants."
+        },
+        {
+            "benefitTitle": "20% Back on In-Flight Purchases",
+            "benefitDesc": "Receive a 20% savings in the form of a statement credit after you use your Card on eligible Delta in-flight purchases of food, beverages,and audio headsets."
+        },
+        {
+            "benefitTitle": "Access to Complimentary Upgrades",
+            "benefitDesc": "If you don't have Medallion Status, your Card adds you to the Complimentary Upgrade list, after Medallion Members."
+        },
+        {
+            "benefitTitle": "Access to The Centurion® Lounge",
+            "benefitDesc": "Enjoy complimentary access to The Centurion® Lounge when you book your Delta flight with your Reserve Card."
+        },
+        {
+            "benefitTitle": "Baggage Insurance Plan",
+            "benefitDesc": "Travel more comfortably knowing you can be covered for lost, damaged, or stolen Baggage when you purchase the Entire Fare for a Common Carrier Vehicle ticket (e.g. plane, train, ship, or bus) on an Eligible Card. Coverage can be provided for up to $1,250 for carry-on Baggage and up to $500 for checked Baggage. For New York State residents, there is a $10,000 aggregate maximum limit for all Covered Persons per Covered Trip. Please read important exclusions and restrictions."
+        },
+        {
+            "benefitTitle": "Car Rental Loss and Damage Insurance",
+            "benefitDesc": "Getting into your Rental Vehicle can be the start of a great vacation. When you use your Eligible Card to reserve and pay for the Entire Rental and decline the collision damage waiver at the rental Company counter, you can be covered for Damage to or Theft of a Rental Vehicle in a Covered Territory. Please read important exclusions and restrictions. Not all vehicle types or rentals are covered. Coverage is not available for vehicles rented in Australia, Italy, and New Zealand. This product provides secondary coverage and does not include liability coverage."
+        },
+        {
+            "benefitTitle": "Complimentary Access to the Centurion® Lounge",
+            "benefitDesc": "Enjoy complimentary access to The Centurion® Lounge when you book your Delta flight with your Reserve Card."
+        },
+        {
+            "benefitTitle": "Complimentary Delta Sky Club® Access",
+            "benefitDesc": "With complimentary access into Delta Sky Club®, you can relax before your Delta flight or between connections. You'll also receive four Delta Sky Club One-Time Guest Passes each year."
+        },
+        {
+            "benefitTitle": "Concierge Services",
+            "benefitDesc": "Our Concierge staff is available to you day or night as a personal resource for many different aspects of your life. Whether you need to select a restaurant and arrange the details of an upcoming special event or if you want expert advice selecting just the right gift, you can rely on Concierge to coordinate and take care of your requests, big and small. Simply call the number on the back of your Card and say \"Concierge\"\" when prompted or send your Concierge request to PlatinumRequests@concierge.americanexpress.com from the e-mail associated with your American Express account.\""
+        },
+        {
+            "benefitTitle": "Delta Reserve Annual Companion Certificate",
+            "benefitDesc": "Enjoy a Companion Certificate on First Class, Delta Comfort+®, or Main Cabin domestic, Caribbean, or Central American roundtrip flights each year after renewal of your Card."
+        },
+        {
+            "benefitTitle": "Extended Warranty",
+            "benefitDesc": "What if the color fades on your new flat-screen TV? Or your food processor starts rattling instead of slicing and dicing? Chances are it will happen right after the Manufacturer's Warranty runs out. Fortunately, when you use your Eligible Card to make a Covered Purchase, you can get up to one extra year added to the Original Manufacturer's Warranty. Applies to warranties of 5 years or less on Covered Purchases in the United States or its territories. Please read important exclusions and restrictions."
+        },
+        {
+            "benefitTitle": "Fee Credit for Global Entry or TSA PreCheck",
+            "benefitDesc": "Stay focused on getting where you need to go. Receive either a statement credit every 4 years after you apply for Global Entry ($100) or a statement credit every 4.5 years after you apply for a five-year membership through any TSA Precheck official enrollment provider (up to $85) when you pay the application fee with an eligible Card. If approved for Global Entry, at no additional charge, you will receive access to TSA PreCheck."
+        },
+        {
+            "benefitTitle": "First Checked Bag Free",
+            "benefitDesc": "Enjoy your First Checked Bag Free on Delta Flights."
+        },
+        {
+            "benefitTitle": "Hertz President's Circle® Status",
+            "benefitDesc": "Transform your car rental experience with Hertz President's Circle Status, compliments of your Delta Reserve Card."
+        },
+        {
+            "benefitTitle": "MQD Boost",
+            "benefitDesc": "Earn $1 Medallion® Qualification Dollar for each $10 of purchases made on your Delta SkyMiles Reserve American Express Card in a calendar year and get a boost toward achieving elevated Medallion Status for next Medallion Year."
+        },
+        {
+            "benefitTitle": "MQD Headstart",
+            "benefitDesc": "With MQD Headstart, you can receive $2,500 Medallion Qualification Dollars each Medallion Qualification Year and you can get closer to elevated Status for next Medallion® Year."
+        },
+        {
+            "benefitTitle": "Premium Global Assist® Hotline",
+            "benefitDesc": "With Premium Global Assist® Hotline, when you travel more than 100 miles from home, we can provide you with 24/7 medical, legal, financial or other select emergency coordination and assistance services. Emergency medical transportation assistance may be provided at no cost, if authorized and arranged by Premium Global Assist Hotline. Card Members may be responsible for the costs charged by third-party service providers."
+        },
+        {
+            "benefitTitle": "Priority Boarding",
+            "benefitDesc": "Receive Main Cabin 1 Priority Boarding on Delta flights; board early, stow your carry-on bag and settle in sooner."
+        },
+        {
+            "benefitTitle": "Purchase Protection",
+            "benefitDesc": "As a Card Member, your Covered Purchase can be covered for up to 90 days from the Covered Purchase date when you charge the Covered Purchased item with your Eligible Card account. Please read important exclusions and restrictions."
+        },
+        {
+            "benefitTitle": "Return Protection",
+            "benefitDesc": "If you try to return an eligible item within 90 days from the date of purchase and the merchant won't take it back, American Express may refund the full purchase price excluding shipping and handling, up to $300 per item, up to a maximum of $1,000 per calendar year per Card account, if you purchased it entirely with your eligible American Express® Card. Purchases must be made in the U.S. or its territories."
+        },
+        {
+            "benefitTitle": "TakeOff 15",
+            "benefitDesc": "Take 15% off anytime you book Award Travel with miles on Delta flights when using delta.com and the Fly Delta app."
+        },
+        {
+            "benefitTitle": "Trip Cancellation and Interruption",
+            "benefitDesc": "If a round-trip is paid for entirely with your eligible Card on or after January 1, 2020 and a covered reason cancels or interrupts your trip, Trip Cancellation and Interruption Insurance can help reimburse the non-refundable travel expenses purchased with the same eligible Card, up to $10,000 per trip and up to $20,000 per eligible Card per 12 consecutive month period. Terms, conditions and limitations apply."
+        },
+        {
+            "benefitTitle": "Trip Delay Insurance",
+            "benefitDesc": "If a round-trip is paid for entirely with your eligible Card on or after January 1, 2020, and a covered reason delays your trip more than 6 hours, Trip Delay Insurance can help reimburse certain additional expenses purchased on the same eligible Card, up to $500 per trip, maximum 2 claims per eligible Card per 12 consecutive month period. Terms, conditions and limitations apply."
+        },
+        {
+            "benefitTitle": "Upgrade Priority",
+            "benefitDesc": "With your Delta SkyMiles Reserve American Express Card receive upgrade priority over other Medallion members within the same Medallion level and fare class grouping."
+        }
+    ],
+    "spendBonusCategory": [
+        {
+            "spendBonusCategoryType": "Single Category - Delta Airlines",
+            "spendBonusCategoryName": "Delta Airlines",
+            "spendBonusCategoryId": 1995164488,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Airfare",
+            "spendBonusDesc": "3X miles on Delta purchases made directly with Delta",
+            "earnMultiplier": 3,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        }
+    ],
+    "annualSpend": [
+        {
+            "annualSpendDesc": "Earn up to 60,000 Medallion® Qualification Miles (MQMs) With Status Boost® per year. You can earn 15,000 MQMs after you spend $30,000 in purchases on your Card in a calendar year, up to four "
+        },
+        {
+            "annualSpendDesc": "Medallion® Qualification Dollar (MQD) Waiver - Waive the MQDs requirement towards Platinum, Gold or Silver Medallion Status after you make at least $25,000 in purchases in that calendar year with your eligible Delta Card."
+        }
+    ],
+    "plaidDetailed": [],
+    "cardImageUrl": "https://rewardsccapi.blob.core.windows.net/ccr1212/1951588725.png"
+}

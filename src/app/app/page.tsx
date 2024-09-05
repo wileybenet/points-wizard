@@ -1,13 +1,9 @@
 import { cookies } from "next/headers";
 import LinkAccount from "@/client/LinkAccount";
 import LogOut from "@/client/LogOut";
-import { getLink, getTransactions } from "@/server-actions/plaidClient";
-import { addPoints } from "@/server-actions/actions";
-
-interface RewardStruct {
-    plaidDetailed: string;
-    earnMultiplier: number;
-}
+import { getLink } from "@/server-actions/plaidClient";
+import { Cards } from "@/app/utils/card";
+import { CardList } from "@/client/CardList";
 
 export default async function App() {
     const cookieStore = cookies();
@@ -15,29 +11,25 @@ export default async function App() {
     const itemId = cookieStore.get("item_id");
 
     if (accessToken && itemId) {
-        const transactions = await getTransactions(accessToken.value);
-        console.log(transactions);
-        const points = await addPoints("amex-gold");
-        const pointMap = points[0].plaidDetailed.reduce(
-            (acc: Record<string, number>, { plaidDetailed, earnMultiplier }: RewardStruct) => ({
-                ...acc,
-                [plaidDetailed]: earnMultiplier,
-            }),
-            {}
-        );
+        await Cards.loadCardPointMaps();
+        await Cards.loadTransactions(accessToken.value);
+        Cards.calculatePoints();
+
         return (
             <div>
-                <LogOut />
-                {accessToken.value} {itemId.value}
-                <div>{transactions.length}</div>
-                <div>
-                    {transactions.map((transaction) => (
-                        <div key={transaction.transaction_id}>
-                            {transaction.name}: {transaction.amount} (
-                            {pointMap[transaction.personal_finance_category!.detailed]})
-                        </div>
-                    ))}
+                <div style={{ position: "fixed", bottom: 0, width: "100%" }}>
+                    <LogOut />
+                    <div style={{ float: "right", textAlign: "right" }}>
+                        {accessToken.value}
+                        <br />
+                        {itemId.value}
+                    </div>
                 </div>
+                <div>
+                    transactions: {Cards.transactions.length} ({Cards.firstTransactionDate})
+                </div>
+                <br />
+                <CardList totalSpent={Cards.totalSpent} pointMaps={Cards.pointMaps} />
             </div>
         );
     }
@@ -47,7 +39,7 @@ export default async function App() {
     return (
         <main>
             App!!!
-            <LinkAccount linkToken={linkToken} />
+            {linkToken && <LinkAccount linkToken={linkToken} />}
         </main>
     );
 }

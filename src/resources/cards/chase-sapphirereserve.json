@@ -1,0 +1,329 @@
+{
+    "cardKey": "chase-sapphirereserve",
+    "cardIssuer": "Chase",
+    "cardName": "Chase Sapphire Reserve®",
+    "cardNetwork": "Visa",
+    "cardType": "Personal",
+    "cardUrl": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
+    "annualFee": 550,
+    "fxFee": 0,
+    "isFxFee": 0,
+    "creditRange": "Good to Excellent",
+    "baseSpendAmount": 1,
+    "baseSpendEarnType": "Chase Ultimate Rewards",
+    "baseSpendEarnCategory": "Flex point",
+    "baseSpendEarnCurrency": "points",
+    "baseSpendEarnValuation": 2,
+    "baseSpendEarnIsCash": 1,
+    "baseSpendEarnCashValue": 1,
+    "isSignupBonus": 1,
+    "signupBonusAmount": "60000",
+    "signupBonusType": "Chase Ultimate Rewards",
+    "signupBonusCategory": "Flex point",
+    "signUpBonusItem": "points",
+    "signupBonusSpend": 4000,
+    "signupBonusLength": 3,
+    "signupBonusLengthPeriod": "Months",
+    "signupAnnualFee": 550,
+    "isSignupAnnualFeeWaived": 0,
+    "signupStatementCredit": 0,
+    "signupBonusDesc": "60,000 bonus points after you spend $4,000 on purchases in the first 3 months from account opening.",
+    "trustedTraveler": "Global Entry or TSA PreCheck® or NEXUS Fee Credit - Receive one statement credit of up to $100 every four years as reimbursement for the application fee charged to your card.",
+    "isTrustedTraveler": 1,
+    "loungeAccess": "Complimentary Airport Lounge Access - Rest and revive before your flight at one of the 1,300+ VIP lounges in over 500 cities worldwide after an easy, one-time enrollment in Priority Pass™ Select",
+    "isLoungeAccess": 1,
+    "freeHotelNight": "",
+    "isFreeHotelNight": 0,
+    "freeCheckedBag": "",
+    "isFreeCheckedBag": 0,
+    "isActive": 1,
+    "benefit": [
+        {
+            "benefitTitle": "$300 Annual Travel Credit",
+            "benefitDesc": "Take advantage of the most flexible travel credit available by receiving up to $300 in statement credit reimbursements each anniversary year for more of your travel purchases than any other card."
+        },
+        {
+            "benefitTitle": "1:1 Point Transfer",
+            "benefitDesc": "Transfer your points to leading airline and hotel loyalty programs at 1 to 1 value. That means 1,000 Chase Ultimate Rewards points equal 1,000 partner miles/points."
+        },
+        {
+            "benefitTitle": "24/7 Fraud Monitoring",
+            "benefitDesc": "We help safeguard your credit card purchases using sophisticated fraud monitoring. We monitor for fraud 24/7 and can text, email or call you if there are unusual purchases on your credit card."
+        },
+        {
+            "benefitTitle": "50% More in Travel Redemption",
+            "benefitDesc": "Get 50% more value when you redeem for travel through Chase Ultimate Rewards. For example, 60,000 points are worth $900 toward travel."
+        },
+        {
+            "benefitTitle": "Auto Rental Collision Damage Waiver",
+            "benefitDesc": "Decline the rental company's collision insurance and charge the entire rental cost to your card. Coverage is primary and provides reimbursement up to $75,000 for theft and collision damage for rental cars in the U.S. and abroad."
+        },
+        {
+            "benefitTitle": "Baggage Delay Insurance",
+            "benefitDesc": "Reimburses you for essential purchases like toiletries and clothing for baggage delays over 6 hours by passenger carrier up to $100 a day for 5 days."
+        },
+        {
+            "benefitTitle": "Complimentary Airport Lounge Access",
+            "benefitDesc": "Complimentary access to 1,300+ airport lounges worldwide with up to two guests, including every Chase Sapphire Lounge by The Club, after an easy one-time enrollment in Priority Pass™ Select."
+        },
+        {
+            "benefitTitle": "DoorDash",
+            "benefitDesc": "Get complimentary access to DashPass - a DoorDash and Caviar membership - a value of $120 for 12 months - which unlocks $0 delivery fees and lower service fees on eligible orders for a minimum of one year when you activate by December 31, 2027. Plus, DashPass members get access to up to $25 in monthly savings with a $5 monthly credit automatically credited to your DoorDash account and up to $20 per month to use on non-restaurant DoorDash orders, via two $10 promos."
+        },
+        {
+            "benefitTitle": "Emergency Evacuation and Transportation",
+            "benefitDesc": "If you or a member of your immediate family are injured or become sick during a trip far from home that results in an emergency evacuation, you can be covered for medical services and transportation up to $100,000."
+        },
+        {
+            "benefitTitle": "Emergency Medical and Dental Benefit",
+            "benefitDesc": "If you're 100 miles or more from home on a trip, you can be reimbursed up to $2,500 for medical expenses if you or your immediate family member become sick or injured."
+        },
+        {
+            "benefitTitle": "Extended warranty protection",
+            "benefitDesc": "Extends the time period of U.S. manufacturer's warranty by an additional year on eligible warranties of three years or less."
+        },
+        {
+            "benefitTitle": "Global Entry or TSA PreCheck® or NEXUS Fee Credit",
+            "benefitDesc": "Receive one statement credit of up to $100 every four years as reimbursement for the application fee charged to your card."
+        },
+        {
+            "benefitTitle": "Lost Luggage Reimbursement",
+            "benefitDesc": "If you or an immediate family member check or carry-on luggage that is damaged or lost by the carrier, you're covered up to $3,000 per passenger."
+        },
+        {
+            "benefitTitle": "Lyft",
+            "benefitDesc": "Earn 10x total points on Lyft rides. Plus, get a complimentary 2 year Lyft Pink All Access membership including member-exclusive pricing and beneﬁts – activate by Dec 31, 2024. Membership auto renews annually."
+        },
+        {
+            "benefitTitle": "Peloton",
+            "benefitDesc": "Earn 10x total points on Peloton equipment and accessory purchases over $150 with a max earn of 50,000 total points now through March 31, 2025."
+        },
+        {
+            "benefitTitle": "Purchase protection",
+            "benefitDesc": "Your new purchases will be covered for 120 days against damage or theft up to $10,000 per claim and $50,000 per year."
+        },
+        {
+            "benefitTitle": "Return Protection",
+            "benefitDesc": "You can be reimbursed for eligible items that the store won't take back within 90 days of purchase, up to $500 per item, $1,000 per year."
+        },
+        {
+            "benefitTitle": "Roadside Assistance",
+            "benefitDesc": "If you have a roadside emergency, you can call for a tow, jumpstart, tire change, locksmith or gas. You’re covered up to $50 per incident 4 times a year."
+        },
+        {
+            "benefitTitle": "The Luxury Hotel & Resort Collection",
+            "benefitDesc": "Take advantage of cardmember perks such as a room upgrade and daily breakfast at over 1,000 properties when you book with The Luxury Hotel & Resort Collection."
+        },
+        {
+            "benefitTitle": "Travel Accident Insurance",
+            "benefitDesc": "When you pay for your air, bus, train or cruise transportation with your card, you are eligible to receive accidental death or dismemberment coverage of up to $1,000,000."
+        },
+        {
+            "benefitTitle": "Travel and Emergency Assistance Services",
+            "benefitDesc": "If you run into a problem away from home, call the Benefit Administrator for legal and medical referrals or other travel emergency assistance. (You will be responsible for the cost of any goods or services obtained.)"
+        },
+        {
+            "benefitTitle": "Trip Cancellation / Interruption Insurance",
+            "benefitDesc": "If your trip is canceled or cut short by sickness, severe weather and other covered situations, you can be reimbursed up to $10,000 per person and 20,000 per trip for your pre-paid, non-refundable travel expenses, including passenger fares, tours and hotels."
+        },
+        {
+            "benefitTitle": "Trip Delay Reimbursement",
+            "benefitDesc": "If your common carrier travel is delayed more than 6 hours or requires an overnight stay, you and your family are covered for unreimbursed expenses, such as meals and lodging, up to $500 per ticket."
+        },
+        {
+            "benefitTitle": "Zero liability protection",
+            "benefitDesc": "You won’t be held responsible for unauthorized charges made with your card for account information. If you see an unauthorized charge, simply call the number on the back of your card."
+        }
+    ],
+    "spendBonusCategory": [
+        {
+            "spendBonusCategoryType": "Single Category - Air Travel (Ultimate Rewards)",
+            "spendBonusCategoryName": "Air Travel (Ultimate Rewards)",
+            "spendBonusCategoryId": 605645987,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Travel Agency - Airfare",
+            "spendBonusDesc": "Earn 5x total points on flights when you purchase travel through Chase Ultimate Rewards® after the first $300 is spent on travel purchases annually",
+            "earnMultiplier": 5,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Car Rentals (Ultimate Rewards)",
+            "spendBonusCategoryName": "Car Rentals (Ultimate Rewards)",
+            "spendBonusCategoryId": 1086445664,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Travel Agency - Car Rental",
+            "spendBonusDesc": "Earn 10x total points on car rentals when you purchase travel through Chase after the first $300 is spent on travel purchases annually",
+            "earnMultiplier": 10,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Dining",
+            "spendBonusCategoryName": "Dining",
+            "spendBonusCategoryId": 160378660,
+            "spendBonusCategoryGroup": "Dining",
+            "spendBonusSubcategoryGroup": "All Dining",
+            "spendBonusDesc": "Earn 3x points on dining at restaurants, including eligible delivery services, takeout, and dining out",
+            "earnMultiplier": 3,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Dining (Ultimate Rewards)",
+            "spendBonusCategoryName": "Dining (Ultimate Rewards)",
+            "spendBonusCategoryId": 1563999853,
+            "spendBonusCategoryGroup": "Dining",
+            "spendBonusSubcategoryGroup": "Dining Portal",
+            "spendBonusDesc": "Earn 10x total points on Chase Dining purchases with Ultimate Rewards®",
+            "earnMultiplier": 10,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Hotels (Ultimate Rewards)",
+            "spendBonusCategoryName": "Hotels (Ultimate Rewards)",
+            "spendBonusCategoryId": 948306327,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Travel Agency - Hotel",
+            "spendBonusDesc": "Earn 10x total points on hotels when you purchase travel through Chase after the first $300 is spent on travel purchases annually",
+            "earnMultiplier": 10,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Lyft",
+            "spendBonusCategoryName": "Lyft",
+            "spendBonusCategoryId": 606097,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Rideshare",
+            "spendBonusDesc": "Earn 10x points on Lyft rides through March 31, 2025",
+            "earnMultiplier": 10,
+            "isDateLimit": 1,
+            "limitBeginDate": "2022-03-01",
+            "limitEndDate": "2025-03-31",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Travel",
+            "spendBonusCategoryName": "Travel",
+            "spendBonusCategoryId": 176638649,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "All Travel",
+            "spendBonusDesc": "Earn 3x points on travel worldwide after the first $300 is spent on travel purchases annually",
+            "earnMultiplier": 3,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        }
+    ],
+    "annualSpend": [],
+    "plaidDetailed": [
+        {
+            "plaidDetailed": "FOOD_AND_DRINK_COFFEE",
+            "earnMultiplier": 3,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "FOOD_AND_DRINK_FAST_FOOD",
+            "earnMultiplier": 3,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "FOOD_AND_DRINK_OTHER_FOOD_AND_DRINK",
+            "earnMultiplier": 3,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "FOOD_AND_DRINK_RESTAURANT",
+            "earnMultiplier": 3,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRAVEL_FLIGHTS",
+            "earnMultiplier": 3,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRAVEL_LODGING",
+            "earnMultiplier": 3,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRAVEL_OTHER_TRAVEL",
+            "earnMultiplier": 3,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRAVEL_RENTAL_CARS",
+            "earnMultiplier": 3,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        }
+    ],
+    "cardImageUrl": "https://rewardsccapi.blob.core.windows.net/ccr1212/145450788.png"
+}

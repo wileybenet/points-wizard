@@ -1,0 +1,171 @@
+{
+    "cardKey": "citi-aaadvantageplatinum",
+    "cardIssuer": "Citi",
+    "cardName": "Citi® / AAdvantage® Platinum Select® World Elite Mastercard®",
+    "cardNetwork": "Mastercard",
+    "cardType": "Personal",
+    "cardUrl": "https://www.citi.com/credit-cards/citi-aadvantage-platinum-elite-credit-card",
+    "annualFee": 99,
+    "fxFee": 0,
+    "isFxFee": 0,
+    "creditRange": "Good to Excellent",
+    "baseSpendAmount": 1,
+    "baseSpendEarnType": "American AAdvantage",
+    "baseSpendEarnCategory": "Airline",
+    "baseSpendEarnCurrency": "miles",
+    "baseSpendEarnValuation": 1.5,
+    "baseSpendEarnIsCash": 0,
+    "baseSpendEarnCashValue": 0,
+    "isSignupBonus": 1,
+    "signupBonusAmount": "50000",
+    "signupBonusType": "American AAdvantage",
+    "signupBonusCategory": "Airline",
+    "signUpBonusItem": "miles",
+    "signupBonusSpend": 2500,
+    "signupBonusLength": 3,
+    "signupBonusLengthPeriod": "Months",
+    "signupAnnualFee": 0,
+    "isSignupAnnualFeeWaived": 1,
+    "signupStatementCredit": 0,
+    "signupBonusDesc": "Earn 50,000 American Airlines AAdvantage® bonus miles after making $2,500 in purchases within the first 3 months of account opening.",
+    "trustedTraveler": "",
+    "isTrustedTraveler": 0,
+    "loungeAccess": "",
+    "isLoungeAccess": 0,
+    "freeHotelNight": "",
+    "isFreeHotelNight": 0,
+    "freeCheckedBag": "First checked bag free on domestic American Airlines itineraries for you and up to 4 companions traveling with you on the same reservation.",
+    "isFreeCheckedBag": 1,
+    "isActive": 1,
+    "benefit": [
+        {
+            "benefitTitle": "$125 American Airlines Flight Discount",
+            "benefitDesc": "Earn a $125 American Airlines Flight Discount after you spend $20,000 or more in purchases during your cardmembership year and renew your card."
+        },
+        {
+            "benefitTitle": "25% Savings on Inflight Food and Beverage",
+            "benefitDesc": "Receive 25% savings on food and beverage purchases when you use your card on American Airlines flights."
+        },
+        {
+            "benefitTitle": "Citi Entertainment®",
+            "benefitDesc": "Citi Entertainment takes the once out of once in a lifetime. Get special access to purchase tickets to thousands of events, including presale tickets and exclusive experiences for the year's most anticipated concerts, sporting events, dining experiences and more."
+        },
+        {
+            "benefitTitle": "Extended Warranty",
+            "benefitDesc": "Get an extra 24 months added to your warranty when you purchase items at least in part with your Citi card and/or ThankYou® Points. If your eligible item breaks, we’ll repair, reimburse or replace it, up to the amount charged on your Citi card and/or ThankYou® Points or up to $10,000 per item, whichever is less."
+        },
+        {
+            "benefitTitle": "First Checked Bag Free",
+            "benefitDesc": "First checked bag free on domestic American Airlines itineraries for you and up to 4 companions traveling with you on the same reservation."
+        },
+        {
+            "benefitTitle": "Preferred Boarding",
+            "benefitDesc": "Enjoy preferred boarding on American Airlines flights so you can save time and be more productive."
+        }
+    ],
+    "spendBonusCategory": [
+        {
+            "spendBonusCategoryType": "Single Category - American Airlines",
+            "spendBonusCategoryName": "American Airlines",
+            "spendBonusCategoryId": 1141863839,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Airfare",
+            "spendBonusDesc": "Earn 2 AAdvantage® miles for every $1 spent at restaurants, gas stations, and eligible American Airlines purchases.",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Dining",
+            "spendBonusCategoryName": "Dining",
+            "spendBonusCategoryId": 160378660,
+            "spendBonusCategoryGroup": "Dining",
+            "spendBonusSubcategoryGroup": "All Dining",
+            "spendBonusDesc": "Earn 2 AAdvantage® miles for every $1 spent at restaurants, gas stations, and eligible American Airlines purchases.",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Gas Stations",
+            "spendBonusCategoryName": "Gas Stations",
+            "spendBonusCategoryId": 1455345350,
+            "spendBonusCategoryGroup": "Auto",
+            "spendBonusSubcategoryGroup": "All Gas Stations",
+            "spendBonusDesc": "Earn 2 AAdvantage® miles for every $1 spent at restaurants, gas stations, and eligible American Airlines purchases.",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        }
+    ],
+    "annualSpend": [
+        {
+            "annualSpendDesc": "Earn a $125 American Airlines Flight Discount after you spend $20,000 or more in purchases during your cardmembership year and renew your card"
+        }
+    ],
+    "plaidDetailed": [
+        {
+            "plaidDetailed": "FOOD_AND_DRINK_COFFEE",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "FOOD_AND_DRINK_FAST_FOOD",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "FOOD_AND_DRINK_OTHER_FOOD_AND_DRINK",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "FOOD_AND_DRINK_RESTAURANT",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRANSPORTATION_GAS",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        }
+    ],
+    "cardImageUrl": "https://rewardsccapi.blob.core.windows.net/ccr1212/1992026249.png"
+}

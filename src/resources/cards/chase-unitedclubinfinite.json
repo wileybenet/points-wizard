@@ -1,0 +1,360 @@
+{
+    "cardKey": "chase-unitedclubinfinite",
+    "cardIssuer": "Chase",
+    "cardName": "United Club℠  Infinite",
+    "cardNetwork": "Visa",
+    "cardType": "Personal",
+    "cardUrl": "https://creditcards.chase.com/travel-credit-cards/united/club-infinite",
+    "annualFee": 525,
+    "fxFee": 0,
+    "isFxFee": 0,
+    "creditRange": "Good to Excellent",
+    "baseSpendAmount": 1,
+    "baseSpendEarnType": "United MileagePlus",
+    "baseSpendEarnCategory": "Airline",
+    "baseSpendEarnCurrency": "miles",
+    "baseSpendEarnValuation": 1.2,
+    "baseSpendEarnIsCash": 0,
+    "baseSpendEarnCashValue": 0,
+    "isSignupBonus": 1,
+    "signupBonusAmount": "80000",
+    "signupBonusType": "United MileagePlus",
+    "signupBonusCategory": "Airline",
+    "signUpBonusItem": "miles",
+    "signupBonusSpend": 5000,
+    "signupBonusLength": 3,
+    "signupBonusLengthPeriod": "Months",
+    "signupAnnualFee": 525,
+    "isSignupAnnualFeeWaived": 0,
+    "signupStatementCredit": 0,
+    "signupBonusDesc": "80,000 Bonus Miles After You Spend $5,000 On Purchases In The First 3 Months From Account Opening",
+    "trustedTraveler": "Global Entry or TSA PreCheck® Fee Credit up to $100 every 4 years - Receive a statement credit of up to $100 every four years as reimbursement for the application fee for Global Entry, TSA PreCheck",
+    "isTrustedTraveler": 1,
+    "loungeAccess": "United Club Membership – up to a $650 value per year - United Club locations offer a place to work, relax, and enjoy complimentary beverages and snacks. Before you fly, you, as the primary Cardmember, and your eligible travel companions will enjoy access to all United Club locations and participating Star Alliance™ affiliated lounges worldwide.*Same page link to Offer Details For an updated list of United Club locations and any temporary closures, please visit united.com.",
+    "isLoungeAccess": 1,
+    "freeHotelNight": "",
+    "isFreeHotelNight": 0,
+    "freeCheckedBag": "Free first and second checked bags – savings of up to $320 per roundtrip - The primary Cardmember and one companion traveling on the same reservation will each receive their first and second standard checked bags free (up to $35 value for the first checked bag and up to $45 value for the second checked bag, each way, per person) on United-operated flights when the primary Cardmember includes their United MileagePlus® number in their reservation and purchases their tickets from United with their card.",
+    "isFreeCheckedBag": 1,
+    "isActive": 1,
+    "benefit": [
+        {
+            "benefitTitle": "10% Discount on United Economy Saver Awards Within the Continental U.S. and Canada",
+            "benefitDesc": "The primary Cardmember will be eligible to book award flights in United Economy on United or United Express with 10% fewer miles."
+        },
+        {
+            "benefitTitle": "25% back on United inflight and Club premium drink purchases",
+            "benefitDesc": "25% back as a statement credit on purchases of food, beverages and Wi-Fi on board United-operated flights and on Club premium drinks when you pay with your United Club℠  Infinite Card."
+        },
+        {
+            "benefitTitle": "Auto Rental Collision Damage Waiver",
+            "benefitDesc": "Decline the rental company's collision insurance and charge the entire rental cost to your card. Coverage is primary and provides reimbursement up to the actual cash value of the vehicle for theft and collision damage for most rental cars in the U.S. and abroad."
+        },
+        {
+            "benefitTitle": "Avis President's Club®",
+            "benefitDesc": "The primary Cardmember of the United Club℠  Card is invited to enroll in Avis President's Club® and enjoy complimentary two-car class upgrades, guaranteed car availability, expedited rental service and more. To enroll, please visit "
+        },
+        {
+            "benefitTitle": "Baggage Delay Insurance",
+            "benefitDesc": "Reimburses you for essential purchases like toiletries and clothing for baggage delays over 6 hours by passenger carrier up to $100 a day for 3 days."
+        },
+        {
+            "benefitTitle": "DoorDash",
+            "benefitDesc": "Get one-year complimentary DashPass, a membership for both DoorDash and Caviar that provides unlimited deliveries with $0 delivery fees and lower service fees on eligible orders. After that, you are automatically enrolled in DashPass at the current monthly rate. Activate by 12/31/24."
+        },
+        {
+            "benefitTitle": "Earn up to 8,000 Premier qualifying points (PQP)",
+            "benefitDesc": "Premier qualifying points (PQP) help you earn MileagePlus Premier® status, which provides you with an enhanced travel experience. You'll earn 500 PQP for every $12,000 you spend on purchases with your Club Card (up to 8,000 PQP in a calendar year) that can be applied toward your Premier status qualification, up to the Premier 1K level. Visit for details about earning Premier status."
+        },
+        {
+            "benefitTitle": "Extended Warranty Protection",
+            "benefitDesc": "Extends the time period of the U.S. manufacturer's warranty by an additional year, on eligible warranties of three years or less."
+        },
+        {
+            "benefitTitle": "Free first and second checked bags",
+            "benefitDesc": "The primary Cardmember and one companion traveling on the same reservation will each receive their first and second standard checked bags free (up to $35 value for the first checked bag and up to $45 value for the second checked bag, each way, per person) on United-operated flights when the primary Cardmember includes their United MileagePlus® number in their reservation and purchases their tickets from United with their card. For complete details, please visit ."
+        },
+        {
+            "benefitTitle": "Global Entry, TSA PreCheck® or NEXUS fee credit",
+            "benefitDesc": "Receive a statement credit of up to $100 every 4 years as reimbursement for the application fee for Global Entry, TSA PreCheck® or NEXUS when charged to your card."
+        },
+        {
+            "benefitTitle": "IHG One Rewards Platinum Elite status",
+            "benefitDesc": "The primary Cardmember is eligible for Platinum Elite status in IHG One Rewards (enhance your stay with complimentary room upgrades and extended check-out as available, earn points towards free nights and elite points that never expire). Plus, receive up to $75 in statement credits as reimbursement for IHG® Hotels and Resorts purchases charged to your card from January 1, 2023, through December 31, 2023."
+        },
+        {
+            "benefitTitle": "Lost Luggage Reimbursement",
+            "benefitDesc": "If you or an immediate family member check or carry on luggage that is damaged or lost by the carrier, you're covered up to $3,000 per passenger."
+        },
+        {
+            "benefitTitle": "MileagePlus miles don't expire",
+            "benefitDesc": "MileagePlus miles never expire. This MileagePlus program benefit gives you a lifetime to use your miles on flights and much more."
+        },
+        {
+            "benefitTitle": "Premier Access® Travel Services",
+            "benefitDesc": "Receive preferential treatment to ease your way through the airport with priority check-in, security screening, boarding, and baggage handling privileges (where available)."
+        },
+        {
+            "benefitTitle": "Premier upgrades on award tickets",
+            "benefitDesc": "The primary Cardmember who has MileagePlus® Premier® status and is traveling on an award ticket and one companion that is traveling on the same reservation are eligible for Complimentary Premier Upgrades on select United- and United Express-operated flights, subject to availability."
+        },
+        {
+            "benefitTitle": "Purchase Protection",
+            "benefitDesc": "Covers your new purchases for 120 days against damage or theft up to $10,000 per claim and $50,000 per year."
+        },
+        {
+            "benefitTitle": "Return Protection",
+            "benefitDesc": "You can be reimbursed for eligible items that the store won't take back within 90 days of purchase. Up to $500 per item, $1,000 per year"
+        },
+        {
+            "benefitTitle": "The Luxury Hotel & Resort Collection",
+            "benefitDesc": "This exceptional group of over 1,000 properties includes many of the world's most exquisite hotels, resorts, lodges and spas, each of which extend you complimentary Cardmember benefits with every stay. Make a reservation through the program using your Chase card to receive the following benefits including daily breakfast for two, a special benefit unique to each property, such as a dining or spa credit, complimentary Wi-Fi, a room upgrade, if available, and early check-in and late checkout, if available. Please visit for more information."
+        },
+        {
+            "benefitTitle": "Trip Cancellation/Interruption Insurance",
+            "benefitDesc": "If your trip is canceled or cut short by sickness, severe weather, and other covered situations, you can be reimbursed up to $10,000 per person and $20,000 per trip for your pre-paid, non-refundable travel expenses including passenger fares, tours, and hotels."
+        },
+        {
+            "benefitTitle": "Trip Delay Reimbursement",
+            "benefitDesc": "If your common carrier travel is delayed more than 12 hours or requires an overnight stay, you and your family are covered for unreimbursed expenses, such as meals and lodging, up to $500 per ticket."
+        },
+        {
+            "benefitTitle": "United Card Events from Chase and United MileagePlus Events",
+            "benefitDesc": "Pursue more of your passions with United Card Events from Chase. As a Cardmember, you will be delighted with opportunities to purchase private, curated once-in-a-lifetime experiences. Sample select wines and satisfy your palate with culinary events at some of the world's best restaurants, meet a sporting legend or make memories with your family. United MileagePlus® Visa Signature® Cardmembers may also use award miles to enjoy exclusive experiences, such as winemaker dinners and other unique virtual events. Please visit to learn more."
+        },
+        {
+            "benefitTitle": "United Club membership",
+            "benefitDesc": "Enjoy a United Club membership – up to a $650 value per year – as long as you remain a Cardmember. United Club locations offer a place to work, relax, and enjoy complimentary beverages and snacks before your flight. The primary Cardmember and eligible travel companions will enjoy access to all United Club locations and participating Star Alliance™ affiliated lounges worldwide."
+        },
+        {
+            "benefitTitle": "Visa Infinite® Concierge Services",
+            "benefitDesc": "Enjoy 24/7 personalized assistance for travel planning, dinner reservations, sports, entertainment tickets and more. Available 365 days a year from home or abroad."
+        }
+    ],
+    "spendBonusCategory": [
+        {
+            "spendBonusCategoryType": "Single Category - Dining",
+            "spendBonusCategoryName": "Dining",
+            "spendBonusCategoryId": 160378660,
+            "spendBonusCategoryGroup": "Dining",
+            "spendBonusSubcategoryGroup": "All Dining",
+            "spendBonusDesc": "2 miles per $1 spent on dining including eligible delivery services",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Ridesharing",
+            "spendBonusCategoryName": "Ridesharing",
+            "spendBonusCategoryId": 1982334500,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Rideshare",
+            "spendBonusDesc": "2 miles per $1 spent on all other travel purchases, including airfare, trains, local transit, cruise lines, hotels, car rentals, taxicabs, resorts, ride share services and tolls",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Tolls",
+            "spendBonusCategoryName": "Tolls",
+            "spendBonusCategoryId": 11030576,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Transportation",
+            "spendBonusDesc": "2 miles per $1 spent on all other travel purchases, including airfare, trains, local transit, cruise lines, hotels, car rentals, taxicabs, resorts, ride share services and tolls",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Transit",
+            "spendBonusCategoryName": "Transit",
+            "spendBonusCategoryId": 1468589631,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Transportation",
+            "spendBonusDesc": "2 miles per $1 spent on all other travel purchases, including airfare, trains, local transit, cruise lines, hotels, car rentals, taxicabs, resorts, ride share services and tolls",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Travel",
+            "spendBonusCategoryName": "Travel",
+            "spendBonusCategoryId": 176638649,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "All Travel",
+            "spendBonusDesc": "2 miles per $1 spent on all other travel purchases, including airfare, trains, local transit, cruise lines, hotels, car rentals, taxicabs, resorts, ride share services and tolls",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - United Airlines",
+            "spendBonusCategoryName": "United Airlines",
+            "spendBonusCategoryId": 733185608,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Airfare",
+            "spendBonusDesc": "4 miles per $1 spent on purchases from United, including tickets, Economy Plus®, inflight food, beverages and Wi-Fi, and other United charges.",
+            "earnMultiplier": 4,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        }
+    ],
+    "annualSpend": [],
+    "plaidDetailed": [
+        {
+            "plaidDetailed": "FOOD_AND_DRINK_COFFEE",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "FOOD_AND_DRINK_FAST_FOOD",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "FOOD_AND_DRINK_OTHER_FOOD_AND_DRINK",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "FOOD_AND_DRINK_RESTAURANT",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRANSPORTATION_OTHER_TRANSPORTATION",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRANSPORTATION_PARKING",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRANSPORTATION_PUBLIC_TRANSIT",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRANSPORTATION_TAXIS_AND_RIDE_SHARES",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRANSPORTATION_TOLLS",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRAVEL_FLIGHTS",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRAVEL_LODGING",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRAVEL_OTHER_TRAVEL",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "plaidDetailed": "TRAVEL_RENTAL_CARS",
+            "earnMultiplier": 2,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        }
+    ],
+    "cardImageUrl": "https://rewardsccapi.blob.core.windows.net/ccr1212/882928618.png"
+}

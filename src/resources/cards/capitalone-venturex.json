@@ -1,0 +1,156 @@
+{
+    "cardKey": "capitalone-venturex",
+    "cardIssuer": "Capital One",
+    "cardName": "Venture X Rewards",
+    "cardNetwork": "Visa",
+    "cardType": "Personal",
+    "cardUrl": "https://www.capitalone.com/credit-cards/venture-x/",
+    "annualFee": 395,
+    "fxFee": 0,
+    "isFxFee": 0,
+    "creditRange": "Excellent",
+    "baseSpendAmount": 2,
+    "baseSpendEarnType": "Capital One Miles",
+    "baseSpendEarnCategory": "Flex point",
+    "baseSpendEarnCurrency": "points",
+    "baseSpendEarnValuation": 1.8,
+    "baseSpendEarnIsCash": 1,
+    "baseSpendEarnCashValue": 0.5,
+    "isSignupBonus": 1,
+    "signupBonusAmount": "75000",
+    "signupBonusType": "Capital One Miles",
+    "signupBonusCategory": "Flex point",
+    "signUpBonusItem": "points",
+    "signupBonusSpend": 4000,
+    "signupBonusLength": 3,
+    "signupBonusLengthPeriod": "Months",
+    "signupAnnualFee": 395,
+    "isSignupAnnualFeeWaived": 0,
+    "signupStatementCredit": 0,
+    "signupBonusDesc": "Earn 75,000 bonus miles once you spend $4,000 on purchases within the first 3 months from account opening",
+    "trustedTraveler": "Receive up to a $100 credit for Global Entry or TSA PreCheck",
+    "isTrustedTraveler": 1,
+    "loungeAccess": "Capital One Lounges - Escape the airport crowd by visiting our all-inclusive Lounges—enjoy unlimited complimentary access for you and 2 guests per visit. Partner Lounge Network - Enjoy unlimited access for you and 2 guests to 1,300+ lounges worldwide from Priority Pass™ and Plaza Premium Group.",
+    "isLoungeAccess": 1,
+    "freeHotelNight": "",
+    "isFreeHotelNight": 0,
+    "freeCheckedBag": "",
+    "isFreeCheckedBag": 0,
+    "isActive": 1,
+    "benefit": [
+        {
+            "benefitTitle": "$300 Annual Travel Credit",
+            "benefitDesc": "Receive an annual $300 credit for bookings through Capital One Travel."
+        },
+        {
+            "benefitTitle": "10,000 Miles Anniversary Bonus",
+            "benefitDesc": "Get 10,000 bonus miles (equal to $100 towards travel) every year, starting on your first anniversary."
+        },
+        {
+            "benefitTitle": "Auto rental collision coverage",
+            "benefitDesc": "Get reimbursed for damage or theft when you pay for a rental car with the Venture X card."
+        },
+        {
+            "benefitTitle": "Capital One Dining",
+            "benefitDesc": "Cardholders enjoy access to exclusive reservations at award-winning restaurants and tickets to unforgettable culinary experiences."
+        },
+        {
+            "benefitTitle": "Capital One Entertainment",
+            "benefitDesc": "Cardholders can experience events across, music, sports and dining with exclusive access to pre-sales, tickets and more."
+        },
+        {
+            "benefitTitle": "Capital One Lounges",
+            "benefitDesc": "Escape the airport crowd by visiting our all-inclusive Lounges—enjoy unlimited complimentary access for you and 2 guests per visit."
+        },
+        {
+            "benefitTitle": "Cell Phone Protection",
+            "benefitDesc": "Protect your cell phone every time you pay your bill with your Venture X card. If it’s stolen or damaged, you’ll get reimbursed up to $800."
+        },
+        {
+            "benefitTitle": "Complimentary membership to The Cultivist",
+            "benefitDesc": "Unlock the world of art. Get access to over 60 of the world’s best museums with a 6-month complimentary Enthusiast membership to The Cultivist (a $220 value)."
+        },
+        {
+            "benefitTitle": "Complimentary PRIOR Subscription",
+            "benefitDesc": "Access extraordinary travel experiences, destination guides and more with a complimentary PRIOR Subscription (a $149 value)."
+        },
+        {
+            "benefitTitle": "Global Entry or TSA PreCheck® Credit",
+            "benefitDesc": "Receive up to a $100 credit for Global Entry or TSA PreCheck®."
+        },
+        {
+            "benefitTitle": "Hertz President’s Circle® status",
+            "benefitDesc": "Skip the rental counter and enjoy the widest selection of cars with a complimentary upgrade."
+        },
+        {
+            "benefitTitle": "Lifestyle Collection",
+            "benefitDesc": "Unlock premium benefits with every stay, like a $50 experience credit, room upgrades when available and more. Plus, earn 10X miles on hotel stays booked through Capital One Travel."
+        },
+        {
+            "benefitTitle": "Miles Redemption",
+            "benefitDesc": "Use your Venture X miles to easily cover travel expenses, including flights, hotels, rental cars and more—plus transfer miles to your choice of 15+ travel loyalty programs."
+        },
+        {
+            "benefitTitle": "Partner Lounge Network",
+            "benefitDesc": "Enjoy unlimited access for you and 2 guests to 1,300+ lounges worldwide from Priority Pass™ and Plaza Premium Group."
+        },
+        {
+            "benefitTitle": "Premier Collection",
+            "benefitDesc": "Enjoy a $100 experience credit, daily breakfast for 2 and other premium benefits, plus earn 10X miles on hotel stays booked through Capital One Travel."
+        }
+    ],
+    "spendBonusCategory": [
+        {
+            "spendBonusCategoryType": "Single Category - Air Travel (Capital One)",
+            "spendBonusCategoryName": "Air Travel (Capital One)",
+            "spendBonusCategoryId": 1396855303,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Travel Agency - Airfare",
+            "spendBonusDesc": "5X Miles on flights booked through Capital One Travel",
+            "earnMultiplier": 5,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Car Rentals (Capital One)",
+            "spendBonusCategoryName": "Car Rentals (Capital One)",
+            "spendBonusCategoryId": 670145462,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Travel Agency - Car Rental",
+            "spendBonusDesc": "10X Miles on rental cars booked through Capital One Travel",
+            "earnMultiplier": 10,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        },
+        {
+            "spendBonusCategoryType": "Single Category - Hotels (Capital One)",
+            "spendBonusCategoryName": "Hotels (Capital One)",
+            "spendBonusCategoryId": 1517218866,
+            "spendBonusCategoryGroup": "Travel",
+            "spendBonusSubcategoryGroup": "Travel Agency - Hotel",
+            "spendBonusDesc": "10X Miles on hotels booked through Capital One Travel",
+            "earnMultiplier": 10,
+            "isDateLimit": 0,
+            "limitBeginDate": "",
+            "limitEndDate": "",
+            "isSpendLimit": 0,
+            "spendLimit": 0,
+            "spendLimitResetPeriod": ""
+        }
+    ],
+    "annualSpend": [
+        {
+            "annualSpendDesc": "Get 10,000 bonus miles (equal to $100 towards travel) every year, starting on your first anniversary"
+        }
+    ],
+    "plaidDetailed": [],
+    "cardImageUrl": "https://rewardsccapi.blob.core.windows.net/ccr1212/1020742267.png"
+}
