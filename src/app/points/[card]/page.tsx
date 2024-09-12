@@ -1,4 +1,4 @@
-import { addPoints } from "../../../server-actions/actions";
+import { addPoints } from "../../../server/actions";
 
 export default async function App({ params }: { params: { card: string } }) {
     const points = await addPoints(params.card);

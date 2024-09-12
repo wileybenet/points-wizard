@@ -1,7 +1,7 @@
 "use client";
 
 import { usePlaidLink } from "react-plaid-link";
-import { exchangePublicToken } from "../server-actions/actions";
+import { exchangePublicToken } from "../server/actions";
 
 export default function LinkAccount({ linkToken }: { linkToken: string }) {
     const onSuccess = async (public_token: string) => {

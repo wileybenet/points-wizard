@@ -1,6 +1,6 @@
 import { Transaction } from "plaid";
-import { addPoints } from "../../server-actions/actions";
-import { getTransactions } from "../../server-actions/plaidClient";
+import { addPoints } from "../../server/actions";
+import { getTransactions } from "../../server/plaidClient";
 
 const CARDS = [
     "amex-deltareserve",

@@ -1,5 +1,5 @@
 import * as dotenv from "dotenv";
-import { addPoints } from "@/server-actions/actions";
+import { addPoints } from "@/server/actions";
 import { writeFile } from "fs/promises";
 import { resolve } from "path";
 
