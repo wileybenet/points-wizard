@@ -14,28 +14,20 @@ const configuration = new Configuration({
 export const plaidClient = new PlaidApi(configuration);
 
 export async function getLink() {
-    const client_user_id = `wiley-${Date.now()}`;
-    const user = await plaidClient.userCreate({
-        client_user_id,
-    });
+    const client_user_id = `user-${Date.now()}`;
     const config: LinkTokenCreateRequest = {
         user: {
             client_user_id,
         },
-        // user_token: user.data.user_token,
         client_name: "pointdexter",
         products: [Products.Transactions],
         country_codes: [CountryCode.Us],
         language: "en",
-        // enable_multi_item_link: true,
+        redirect_uri: process.env.PLAID_REDIRECT_URI,
         transactions: {
             days_requested: 365,
         },
     };
-
-    if (process.env.PLAID_REDIRECT_URI !== "") {
-        config.redirect_uri = process.env.PLAID_REDIRECT_URI;
-    }
 
     try {
         const createTokenResponse = await plaidClient.linkTokenCreate(config);
