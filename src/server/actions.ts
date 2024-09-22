@@ -5,7 +5,7 @@ import { plaidClient } from "./plaidClient";
 import { existsSync, readFileSync } from "fs";
 import { resolve } from "path";
 
-const CARD_POINTS_DIR = resolve(__dirname, "../../../../src/resources/cards/");
+const CARD_POINTS_DIR = resolve(__dirname, "../../../src/resources/cards/");
 
 const wait = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
@@ -50,13 +50,18 @@ async function ccApi(url: string) {
     return json;
 }
 
-export async function addPoints(card: string) {
-    const cardFile = `${CARD_POINTS_DIR}/${card}.json`;
-    if (existsSync(cardFile)) {
-        return JSON.parse(readFileSync(cardFile).toString());
-    }
+export async function fetchCardDetails(card: string) {
     const [plaidMap] = await ccApi(`creditcard-plaid-bycard/${card}`);
     const [cardData] = await ccApi(`creditcard-detail-bycard/${card}`);
     const [imageData] = await ccApi(`creditcard-card-image/${card}`);
     return { ...imageData, ...cardData, ...plaidMap };
+}
+
+export async function addPoints(card: string) {
+    const cardFile = `${CARD_POINTS_DIR}/${card}.json`;
+    if (existsSync(cardFile)) {
+        return JSON.parse(readFileSync(cardFile).toString());
+    } else {
+        throw new Error(`missing ${cardFile}`);
+    }
 }

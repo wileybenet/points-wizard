@@ -6,6 +6,7 @@ import { getLink } from "@/server/plaidClient";
 import { Cards } from "@/app/utils/card";
 import { CardList } from "@/client/CardList";
 import plaidLogo from "@/resources/images/plaid.svg";
+import pointdexterLogo from "@/resources/images/pointdexter_logo.png";
 
 export default async function App() {
     const cookieStore = cookies();
@@ -41,7 +42,10 @@ export default async function App() {
     return (
         <main>
             App!!!
-            <Image src={plaidLogo} alt="plaid" height={100} />
+            <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <Image src={pointdexterLogo} alt="pointdexter" height={200} />
+                <Image src={plaidLogo} alt="plaid" height={100} />
+            </div>
             {linkToken && <LinkAccount linkToken={linkToken} />}
         </main>
     );

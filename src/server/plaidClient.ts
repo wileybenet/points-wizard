@@ -52,6 +52,5 @@ export async function getTransactions(accessToken: string) {
     };
     const response = await plaidClient.transactionsGet(request);
     const { transactions, ...rest } = response.data;
-    console.log(rest);
     return transactions;
 }

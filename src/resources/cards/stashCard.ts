@@ -1,5 +1,5 @@
 import * as dotenv from "dotenv";
-import { addPoints } from "@/server/actions";
+import { fetchCardDetails } from "@/server/actions";
 import { writeFile } from "fs/promises";
 import { resolve } from "path";
 
@@ -22,7 +22,7 @@ const cards = [
 
 (async () => {
     for (const card of cards) {
-        const points = await addPoints(card);
+        const points = await fetchCardDetails(card);
         await writeFile(resolve(`./src/resources/cards/${card}.json`), JSON.stringify(points, null, 4));
         console.log(`done: ${card}`);
     }
