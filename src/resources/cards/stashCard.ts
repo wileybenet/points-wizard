@@ -6,18 +6,19 @@ import { resolve } from "path";
 dotenv.config({ path: "./.env.local" });
 
 const cards = [
-    "amex-platinum",
-    "amex-gold",
-    "capitalone-venturex",
-    "chase-sapphirereserve",
+    // "amex-platinum",
+    // "amex-gold",
+    // "capitalone-venturex",
+    // "chase-sapphirereserve",
 
-    "amex-deltareserve",
-    "chase-unitedclubinfinite",
+    // "amex-deltareserve",
+    // "chase-unitedclubinfinite",
 
-    "chase-sapphire",
-    "chase-sapphirepreferred",
-    "citi-aaadvantageplatinum",
-    "citi-diamondpreferred",
+    // "chase-sapphire",
+    // "chase-sapphirepreferred",
+    // "citi-aaadvantageplatinum",
+    // "citi-diamondpreferred",
+    "wellsfargo-activecash",
 ];
 
 (async () => {

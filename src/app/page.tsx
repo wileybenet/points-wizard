@@ -14,9 +14,9 @@ export default async function App() {
     const itemId = cookieStore.get("item_id");
 
     if (accessToken && itemId) {
-        await Cards.loadCardPointMaps();
-        await Cards.loadTransactions(accessToken.value);
-        Cards.calculatePoints();
+        // await Cards.loadCardPointMaps();
+        // await Cards.loadTransactions(accessToken.value);
+        // Cards.calculatePoints();
 
         return (
             <div>
