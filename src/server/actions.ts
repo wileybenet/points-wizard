@@ -62,6 +62,6 @@ export async function addPoints(card: string) {
     if (existsSync(cardFile)) {
         return JSON.parse(readFileSync(cardFile).toString());
     } else {
-        throw new Error(`missing ${cardFile}`);
+        console.log(`missing ${cardFile}`, __dirname);
     }
 }
