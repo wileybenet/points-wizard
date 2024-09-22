@@ -5,7 +5,7 @@ import { plaidClient } from "./plaidClient";
 import { existsSync, readFileSync } from "fs";
 import { resolve } from "path";
 
-const CARD_POINTS_DIR = resolve(__dirname, "../../../src/resources/cards/");
+const CARD_POINTS_DIR = resolve("./src/resources/cards/");
 
 const wait = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
