@@ -4,4 +4,5 @@ todo
 
 -   annualize the spend/savings
 -   pull mulitple cards
+-   styling
 -
