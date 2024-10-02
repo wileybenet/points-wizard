@@ -58,7 +58,7 @@ export default async function App() {
                     </a>{" "}
                     to analyze your spending and caclulate the best credit card for you.
                 </p>
-                <p>We don't store your data on our servers. Ever.</p>
+                <p>We don&apos;t store your data on our servers. Ever.</p>
                 <p>Your data stays on your device in case you need it.</p>
                 <p>You can clear it any time.</p>
             </div>
