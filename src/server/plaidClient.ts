@@ -1,5 +1,7 @@
 import { Configuration, CountryCode, LinkTokenCreateRequest, PlaidApi, PlaidEnvironments, Products } from "plaid";
 
+const sleep = (ms: number) => new Promise((res) => setTimeout(res, ms));
+
 const configuration = new Configuration({
     basePath: PlaidEnvironments[process.env.PLAID_ENV || ""],
     baseOptions: {
@@ -27,7 +29,7 @@ export async function getLink() {
         products: [Products.Transactions],
         country_codes: [CountryCode.Us],
         language: "en",
-        enable_multi_item_link: true,
+        // enable_multi_item_link: true,
         redirect_uri: process.env.PLAID_REDIRECT_URI,
         transactions: {
             days_requested: 365,
@@ -46,7 +48,7 @@ interface Transaction {
     amount: number;
 }
 
-export async function getTransactions(accessToken: string) {
+export async function getTransactions(accessToken: string, attempt = 0) {
     const request = {
         access_token: accessToken,
         start_date: "2023-08-06",
@@ -55,7 +57,14 @@ export async function getTransactions(accessToken: string) {
             count: 500,
         },
     };
-    const response = await plaidClient.transactionsGet(request);
-    const { transactions, ...rest } = response.data;
-    return transactions;
+    try {
+        const response = await plaidClient.transactionsGet(request);
+        const { transactions, ...rest } = response.data;
+        return transactions;
+    } catch (err) {
+        if (attempt <= 2) {
+            await sleep(1000);
+            return getTransactions(accessToken, attempt + 1);
+        }
+    }
 }

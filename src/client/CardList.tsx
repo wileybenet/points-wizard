@@ -24,7 +24,7 @@ export function CardList({ totalSpent, pointMaps }: Props) {
             <table style={{ borderWidth: 0 }}>
                 <thead>
                     <tr>
-                        <th style={{ textAlign: "left", padding: 5 }}></th>
+                        <th style={{ textAlign: "left", padding: 5 }}>Credit Card</th>
                         <th style={{ textAlign: "left", padding: 5 }}></th>
                         <th style={{ textAlign: "left", padding: 5 }} onClick={sort("pointsEarned")}>
                             Points
@@ -61,11 +61,11 @@ export function CardList({ totalSpent, pointMaps }: Props) {
                                             <img src={cardImageUrl} alt={cardName} height={50} />
                                         </a>
                                     </td>
-                                    <td style={{ padding: 5 }}>{cardName}</td>
-                                    <td style={{ padding: 5 }}>{asMoney(pointsEarned)}</td>
-                                    <td style={{ padding: 5 }}>${asMoney(dollarValue)}</td>
-                                    <td style={{ padding: 5 }}>${asMoney(annualFee)}</td>
-                                    <td style={{ padding: 5 }}>${asMoney(estimatedValue)}</td>
+                                    <td style={{ padding: 5, textAlign: "left" }}>{cardName}</td>
+                                    <td style={{ padding: 5, textAlign: "right" }}>{asMoney(pointsEarned)}</td>
+                                    <td style={{ padding: 5, textAlign: "right" }}>${asMoney(dollarValue)}</td>
+                                    <td style={{ padding: 5, textAlign: "right" }}>${asMoney(annualFee)}</td>
+                                    <td style={{ padding: 5, textAlign: "right" }}>${asMoney(estimatedValue)}</td>
                                 </tr>
                             )
                         )}

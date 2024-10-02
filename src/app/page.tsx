@@ -6,7 +6,7 @@ import { getLink } from "@/server/plaidClient";
 import { Cards } from "@/app/utils/card";
 import { CardList } from "@/client/CardList";
 import plaidLogo from "@/resources/images/plaid.svg";
-import pointdexterLogo from "@/resources/images/pointdexter_logo.png";
+import pointdexterLogo from "@/resources/images/pointdexter_logo_transparent.png";
 
 export default async function App() {
     const cookieStore = cookies();
@@ -19,34 +19,49 @@ export default async function App() {
         Cards.calculatePoints();
 
         return (
-            <div>
-                <div style={{ position: "fixed", bottom: 0, width: "100%" }}>
+            <>
+                <span className="wordmark-small">PointDexter</span>
+                <div style={{ position: "fixed", bottom: "10px", right: "10px", textAlign: "right" }}>
                     <LogOut />
-                    <div style={{ float: "right", textAlign: "right" }}>
-                        {accessToken.value}
-                        <br />
-                        {itemId.value}
+                </div>
+                <div className="results">
+                    <CardList totalSpent={Cards.totalSpent} pointMaps={Cards.pointMaps} />
+                    <div>
+                        transactions: {Cards.transactions.length} ({Cards.firstTransactionDate})
                     </div>
                 </div>
-                <div>
-                    transactions: {Cards.transactions.length} ({Cards.firstTransactionDate})
-                </div>
-                <br />
-                <CardList totalSpent={Cards.totalSpent} pointMaps={Cards.pointMaps} />
-            </div>
+            </>
         );
     }
 
     const linkToken = await getLink();
 
     return (
-        <main>
-            App!!!
-            <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-                <Image src={pointdexterLogo} alt="pointdexter" height={200} />
-                <Image src={plaidLogo} alt="plaid" height={100} />
+        <main className="intro-content">
+            <div className="header">
+                <Image
+                    src={pointdexterLogo}
+                    alt="pointdexter"
+                    height={230}
+                    style={{ paddingLeft: "20px", marginRight: "20px", paddingBottom: "15px" }}
+                />
+                <span className="wordmark">PointDexter</span>
+                <span className="plus">+</span>
+                <Image src={plaidLogo} alt="plaid" height={330} style={{ paddingTop: "10px", marginLeft: "-45px" }} />
             </div>
             {linkToken && <LinkAccount linkToken={linkToken} />}
+            <div style={{ textAlign: "center", marginTop: "20vh" }}>
+                <p>
+                    We use{" "}
+                    <a href="https://plaid.com/what-is-plaid/" target="_blank">
+                        Plaid
+                    </a>{" "}
+                    to analyze your spending and caclulate the best credit card for you.
+                </p>
+                <p>We don't store your data on our servers. Ever.</p>
+                <p>Your data stays on your device in case you need it.</p>
+                <p>You can clear it any time.</p>
+            </div>
         </main>
     );
 }
