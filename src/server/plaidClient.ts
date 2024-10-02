@@ -48,7 +48,7 @@ interface Transaction {
     amount: number;
 }
 
-export async function getTransactions(accessToken: string, attempt = 0) {
+export async function getTransactions(accessToken: string, attempt = 1) {
     const request = {
         access_token: accessToken,
         start_date: "2023-08-06",
@@ -60,11 +60,16 @@ export async function getTransactions(accessToken: string, attempt = 0) {
     try {
         const response = await plaidClient.transactionsGet(request);
         const { transactions, ...rest } = response.data;
-        return transactions;
-    } catch (err) {
-        if (attempt <= 2) {
-            await sleep(1000);
+        if (transactions.length > 10) {
+            return transactions;
+        }
+        throw new Error("not enough data");
+    } catch (err: any) {
+        if (attempt < 10) {
+            console.log(`failed, retrying #${attempt} (${err.message})`);
+            await sleep(attempt * 2000);
             return getTransactions(accessToken, attempt + 1);
         }
+        throw err;
     }
 }

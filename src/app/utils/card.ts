@@ -13,6 +13,7 @@ const CARDS = [
     "chase-unitedclubinfinite",
     "citi-aaadvantageplatinum",
     "citi-diamondpreferred",
+    "wellsfargo-activecash",
 ];
 
 interface DetailedReward {
@@ -38,6 +39,7 @@ export interface RewardStruct {
     dollarValue: number;
     estimatedValue: number;
     cardUrl: string;
+    isCashback: boolean;
 }
 
 export class Cards {
@@ -77,7 +79,10 @@ export class Cards {
     static points(cardName: string) {
         const map = Cards.pointMapsIndex[cardName];
         return Cards.transactions.reduce((total, transaction) => {
-            const multiplier = map.multiplierByPlaidDetailed[transaction.personal_finance_category!.detailed] || 1;
+            let multiplier = map.multiplierByPlaidDetailed[transaction.personal_finance_category!.detailed];
+            if (!multiplier) {
+                multiplier = map.multiplierByPlaidDetailed["*"] || 1;
+            }
             return total + transaction.amount * multiplier;
         }, 0);
     }

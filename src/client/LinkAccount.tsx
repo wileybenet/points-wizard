@@ -5,9 +5,8 @@ import { exchangePublicToken } from "../server/actions";
 
 export default function LinkAccount({ linkToken }: { linkToken: string }) {
     const onSuccess = async (public_token: string) => {
-        const { access_token, item_id } = await exchangePublicToken(public_token);
-        localStorage.setItem("access_token", access_token);
-        localStorage.setItem("item_id", item_id);
+        await exchangePublicToken(public_token);
+        // location.reload();
     };
 
     const config: Parameters<typeof usePlaidLink>[0] = {

@@ -18,9 +18,6 @@ export function CardList({ totalSpent, pointMaps }: Props) {
     const sort = (key: SortKey) => () => setSortKey(key);
     return (
         <div>
-            <div>
-                ${asMoney(totalSpent)} ${asMoney(totalSpent * 0.02)} (2% cash back)
-            </div>
             <table style={{ borderWidth: 0 }}>
                 <thead>
                     <tr>
@@ -54,6 +51,7 @@ export function CardList({ totalSpent, pointMaps }: Props) {
                                 annualFee,
                                 cardImageUrl,
                                 cardUrl,
+                                isCashback,
                             }) => (
                                 <tr key={cardKey}>
                                     <td style={{ padding: 5 }}>
@@ -62,7 +60,9 @@ export function CardList({ totalSpent, pointMaps }: Props) {
                                         </a>
                                     </td>
                                     <td style={{ padding: 5, textAlign: "left" }}>{cardName}</td>
-                                    <td style={{ padding: 5, textAlign: "right" }}>{asMoney(pointsEarned)}</td>
+                                    <td style={{ padding: 5, textAlign: "right" }}>
+                                        {isCashback ? "" : asMoney(pointsEarned)}
+                                    </td>
                                     <td style={{ padding: 5, textAlign: "right" }}>${asMoney(dollarValue)}</td>
                                     <td style={{ padding: 5, textAlign: "right" }}>${asMoney(annualFee)}</td>
                                     <td style={{ padding: 5, textAlign: "right" }}>${asMoney(estimatedValue)}</td>

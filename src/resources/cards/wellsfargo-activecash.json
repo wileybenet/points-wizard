@@ -1,0 +1,59 @@
+{
+    "cardKey": "wellsfargo-activecash",
+    "cardIssuer": "Wells Fargo",
+    "cardName": "Wells Fargo Active Cash®",
+    "cardNetwork": "Visa",
+    "cardType": "Personal",
+    "cardUrl": "https://creditcards.wellsfargo.com/active-cash-credit-card/",
+    "annualFee": 0,
+    "fxFee": 3.0,
+    "isFxFee": 1,
+    "creditRange": "Good to Excellent",
+    "baseSpendAmount": 2.0,
+    "baseSpendEarnType": "Cash",
+    "baseSpendEarnCategory": "Cash",
+    "baseSpendEarnCurrency": "cashback",
+    "baseSpendEarnValuation": 2.0,
+    "baseSpendEarnIsCash": 1,
+    "baseSpendEarnCashValue": 1.0,
+    "isSignupBonus": 1,
+    "signupBonusAmount": "200",
+    "signupBonusType": "Cash",
+    "signupBonusCategory": "Cash",
+    "signUpBonusItem": "Cash",
+    "signupBonusSpend": 500,
+    "signupBonusLength": 3,
+    "signupBonusLengthPeriod": "Months",
+    "signupAnnualFee": 0,
+    "isSignupAnnualFeeWaived": 0,
+    "signupStatementCredit": 0,
+    "signupBonusDesc": "Earn a $200 cash rewards bonus when you spend $500 in purchases in the first 3 months.",
+    "trustedTraveler": "",
+    "isTrustedTraveler": 0,
+    "loungeAccess": "",
+    "isLoungeAccess": 0,
+    "freeHotelNight": "",
+    "isFreeHotelNight": 0,
+    "freeCheckedBag": "",
+    "isFreeCheckedBag": 0,
+    "isActive": 1,
+    "benefit": [
+        {
+            "benefitTitle": "24/7 Concierge service",
+            "benefitDesc": "Find tickets to top sports and entertainment events, book travel, make dinner reservations and more with your complimentary 24/7 Visa Signature Concierge."
+        },
+        {
+            "benefitTitle": "Cellular Telephone Protection",
+            "benefitDesc": "Up to $600 of cell phone protection against damage or theft. Subject to a $25 deductible."
+        },
+        {
+            "benefitTitle": "Luxury Hotel Collection",
+            "benefitDesc": "The Active Cash Card offers you a premium collection of benefits at a selection of the world’s most intriguing and prestigious properties. Benefits include room upgrade, late check-out and complimentary breakfast. Visit Visa Signature Hotel Collection7 and learn more."
+        }
+    ],
+    "spendBonusCategory": [],
+    "annualSpend": [],
+    "cardImageUrl": "https://rewardsccapi.blob.core.windows.net/ccr1212/1779647940.png",
+    "plaidDetailed": [],
+    "isCashback": true
+}
