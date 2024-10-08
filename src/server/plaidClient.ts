@@ -1,4 +1,11 @@
-import { Configuration, CountryCode, LinkTokenCreateRequest, PlaidApi, PlaidEnvironments, Products } from "plaid";
+import {
+    Configuration,
+    CountryCode,
+    LinkTokenCreateRequest,
+    PlaidApi,
+    PlaidEnvironments,
+    Products,
+} from "plaid";
 
 const sleep = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
