@@ -2,11 +2,14 @@
 
 import React, { useState } from "react";
 import { RewardStruct } from "../app/utils/card";
+import styles from "./cardList.module.css";
 
 type SortKey = "pointsEarned" | "dollarValue" | "estimatedValue" | "annualFee";
 
-const by = (key: SortKey) => (mapA: RewardStruct, mapB: RewardStruct) => mapB[key] - mapA[key];
-const asMoney = (num: number, decimals = 0) => num.toFixed(decimals).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+const by = (key: SortKey) => (mapA: RewardStruct, mapB: RewardStruct) =>
+    mapB[key] - mapA[key];
+const asMoney = (num: number, decimals = 0) =>
+    num.toFixed(decimals).replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 
 interface Props {
     totalSpent: number;
@@ -21,19 +24,46 @@ export function CardList({ totalSpent, pointMaps }: Props) {
             <table style={{ borderWidth: 0 }}>
                 <thead>
                     <tr>
-                        <th style={{ textAlign: "left", padding: 5 }}>Credit Card</th>
+                        <th style={{ textAlign: "left", padding: 5 }}>
+                            Credit Card
+                        </th>
                         <th style={{ textAlign: "left", padding: 5 }}></th>
-                        <th style={{ textAlign: "left", padding: 5 }} onClick={sort("pointsEarned")}>
+                        <th
+                            style={{ textAlign: "right", padding: 5 }}
+                            onClick={sort("pointsEarned")}
+                        >
                             Points
                         </th>
-                        <th style={{ textAlign: "left", padding: 5 }} onClick={sort("dollarValue")}>
+                        <th
+                            style={{ textAlign: "right", padding: 5 }}
+                            onClick={sort("dollarValue")}
+                            className={styles.desktopOnlyCell}
+                        >
                             Dollar Value
                         </th>
-                        <th style={{ textAlign: "left", padding: 5 }} onClick={sort("annualFee")}>
+                        <th
+                            style={{ textAlign: "right", padding: 5 }}
+                            onClick={sort("annualFee")}
+                            className={styles.desktopOnlyCell}
+                        >
                             Annual Fee
                         </th>
-                        <th style={{ textAlign: "left", padding: 5 }} onClick={sort("estimatedValue")}>
+                        <th
+                            style={{ textAlign: "right", padding: 5 }}
+                            onClick={sort("estimatedValue")}
+                            className={styles.desktopOnlyCell}
+                        >
                             Annual Savings
+                        </th>
+                        <th
+                            style={{
+                                textAlign: "right",
+                                padding: 5,
+                            }}
+                            onClick={sort("estimatedValue")}
+                            className={styles.mobileOnlyCell}
+                        >
+                            Value (Earnings - Fees)
                         </th>
                     </tr>
                 </thead>
@@ -56,16 +86,70 @@ export function CardList({ totalSpent, pointMaps }: Props) {
                                 <tr key={cardKey}>
                                     <td style={{ padding: 5 }}>
                                         <a href={cardUrl}>
-                                            <img src={cardImageUrl} alt={cardName} height={50} />
+                                            <img
+                                                src={cardImageUrl}
+                                                alt={cardName}
+                                                height={50}
+                                            />
                                         </a>
                                     </td>
-                                    <td style={{ padding: 5, textAlign: "left" }}>{cardName}</td>
-                                    <td style={{ padding: 5, textAlign: "right" }}>
-                                        {isCashback ? "" : asMoney(pointsEarned)}
+                                    <td
+                                        style={{
+                                            padding: 5,
+                                            textAlign: "left",
+                                        }}
+                                    >
+                                        {cardName}
                                     </td>
-                                    <td style={{ padding: 5, textAlign: "right" }}>${asMoney(dollarValue)}</td>
-                                    <td style={{ padding: 5, textAlign: "right" }}>${asMoney(annualFee)}</td>
-                                    <td style={{ padding: 5, textAlign: "right" }}>${asMoney(estimatedValue)}</td>
+                                    <td
+                                        style={{
+                                            padding: 5,
+                                            textAlign: "right",
+                                        }}
+                                    >
+                                        {isCashback
+                                            ? ""
+                                            : asMoney(pointsEarned)}
+                                    </td>
+                                    <td
+                                        style={{
+                                            padding: 5,
+                                            textAlign: "right",
+                                        }}
+                                        className={styles.desktopOnlyCell}
+                                    >
+                                        ${asMoney(dollarValue)}
+                                    </td>
+                                    <td
+                                        style={{
+                                            padding: 5,
+                                            textAlign: "right",
+                                        }}
+                                        className={styles.desktopOnlyCell}
+                                    >
+                                        ${asMoney(annualFee)}
+                                    </td>
+                                    <td
+                                        style={{
+                                            padding: 5,
+                                            textAlign: "right",
+                                        }}
+                                        className={styles.desktopOnlyCell}
+                                    >
+                                        ${asMoney(estimatedValue)}
+                                    </td>
+                                    <td
+                                        style={{
+                                            padding: 5,
+                                            textAlign: "right",
+                                        }}
+                                        className={styles.mobileOnlyCell}
+                                    >
+                                        ${asMoney(dollarValue)}
+                                        <br />- ${asMoney(annualFee)}
+                                        <br />={" "}
+                                        <b>${asMoney(estimatedValue)}</b>
+                                    </td>
                                 </tr>
                             )
                         )}

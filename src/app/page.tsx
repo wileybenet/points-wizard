@@ -21,13 +21,30 @@ export default async function App() {
         return (
             <>
                 <span className="wordmark-small">PointDexter</span>
-                <div style={{ position: "fixed", bottom: "10px", right: "10px", textAlign: "right" }}>
+                <div
+                    style={{
+                        position: "fixed",
+                        bottom: "10px",
+                        right: "10px",
+                        textAlign: "right",
+                    }}
+                >
                     <LogOut />
                 </div>
                 <div className="results">
-                    <CardList totalSpent={Cards.totalSpent} pointMaps={Cards.pointMaps} />
-                    <div>
-                        transactions: {Cards.transactions.length} ({Cards.firstTransactionDate})
+                    <CardList
+                        totalSpent={Cards.totalSpent}
+                        pointMaps={Cards.pointMaps}
+                    />
+                    <div
+                        style={{
+                            marginBottom: "80px",
+                            marginTop: "20px",
+                            textAlign: "center",
+                        }}
+                    >
+                        Based on {Cards.transactions.length} transactions since{" "}
+                        {Cards.firstTransactionDate}
                     </div>
                 </div>
             </>
@@ -38,25 +55,48 @@ export default async function App() {
 
     return (
         <main className="intro-content">
-            <div className="header">
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                }}
+            >
                 <Image
                     src={pointdexterLogo}
                     alt="pointdexter"
-                    height={230}
-                    style={{ paddingLeft: "20px", marginRight: "20px", paddingBottom: "15px" }}
+                    height={180}
+                    style={{
+                        paddingLeft: "20px",
+                        marginRight: "20px",
+                        paddingBottom: "15px",
+                    }}
                 />
                 <span className="wordmark">PointDexter</span>
-                <span className="plus">+</span>
-                <Image src={plaidLogo} alt="plaid" height={330} style={{ paddingTop: "10px", marginLeft: "-45px" }} />
             </div>
+            <span className="plus">+</span>
+            <Image
+                src={plaidLogo}
+                alt="plaid"
+                height={200}
+                style={{ marginTop: "-10px" }}
+            />
+
             {linkToken && <LinkAccount linkToken={linkToken} />}
-            <div style={{ textAlign: "center", marginTop: "20vh" }}>
+            <div
+                style={{
+                    textAlign: "center",
+                    marginTop: "10vh",
+                    padding: "20px",
+                }}
+            >
                 <p>
                     We use{" "}
                     <a href="https://plaid.com/what-is-plaid/" target="_blank">
                         Plaid
                     </a>{" "}
-                    to analyze your spending and caclulate the best credit card for you.
+                    to analyze your spending and caclulate the best credit card
+                    for you.
                 </p>
                 <p>We don&apos;t store your data on our servers. Ever.</p>
                 <p>Your data stays on your device in case you need it.</p>
