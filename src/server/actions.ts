@@ -4,8 +4,10 @@ import { cookies } from "next/headers";
 import { plaidClient } from "./plaidClient";
 import { existsSync, readFileSync } from "fs";
 import { resolve } from "path";
+import { kv } from "@vercel/kv";
 
 const CARD_POINTS_DIR = resolve("./src/resources/cards/");
+const kvAccessTokenId = "userAccessTokens";
 
 const wait = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
@@ -26,6 +28,16 @@ export async function exchangePublicToken(publicToken: string) {
         secure: true,
         httpOnly: true,
     });
+
+    try {
+        const keys: string[] = (await kv.get(kvAccessTokenId)) ?? [];
+        await kv.set(
+            kvAccessTokenId,
+            keys.push(tokenResponse.data.access_token)
+        );
+    } catch (err) {
+        console.log(err);
+    }
 
     return tokenResponse.data;
 }
