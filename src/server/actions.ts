@@ -15,26 +15,26 @@ export async function exchangePublicToken(publicToken: string) {
     const tokenResponse = await plaidClient.itemPublicTokenExchange({
         public_token: publicToken,
     });
+    const token = tokenResponse.data.access_token;
 
     cookies().set({
         name: "access_token",
-        value: tokenResponse.data.access_token,
+        value: token,
         secure: true,
         httpOnly: true,
     });
     cookies().set({
         name: "item_id",
-        value: tokenResponse.data.item_id,
+        value: token,
         secure: true,
         httpOnly: true,
     });
 
     try {
         const keys: string[] = (await kv.get(kvAccessTokenId)) ?? [];
-        await kv.set(
-            kvAccessTokenId,
-            keys.push(tokenResponse.data.access_token)
-        );
+        const uniqueKeys = new Set(keys);
+        uniqueKeys.add(token);
+        await kv.set(kvAccessTokenId, [...uniqueKeys]);
     } catch (err) {
         console.log(err);
     }
