@@ -36,10 +36,28 @@ export async function exchangePublicToken(publicToken: string) {
         uniqueKeys.add(token);
         await kv.set(kvAccessTokenId, [...uniqueKeys]);
     } catch (err) {
-        console.log(err);
+        console.error(`Failed to store access token: ${token}`);
+        console.error(err);
     }
 
     return tokenResponse.data;
+}
+
+/**
+ * There's probably somewhere else this should live, but just putting it here for now.
+ */
+export async function delinkAccessTokens() {
+    const keys: string[] = (await kv.get(kvAccessTokenId)) ?? [];
+    for (const key of keys) {
+        try {
+            await plaidClient.itemRemove({ access_token: key });
+            keys.splice(keys.indexOf(key), 1);
+        } catch (err) {
+            console.error(err);
+        }
+    }
+    // If any keys weren't removed, leave them in the store
+    kv.set(kvAccessTokenId, keys);
 }
 
 export async function logOut() {
