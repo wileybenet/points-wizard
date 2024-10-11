@@ -1,11 +1,5 @@
-import {
-    Configuration,
-    CountryCode,
-    LinkTokenCreateRequest,
-    PlaidApi,
-    PlaidEnvironments,
-    Products,
-} from "plaid";
+import { add, format } from "date-fns";
+import { Configuration, CountryCode, LinkTokenCreateRequest, PlaidApi, PlaidEnvironments, Products } from "plaid";
 
 const sleep = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
@@ -58,8 +52,13 @@ interface Transaction {
 export async function getTransactions(accessToken: string, attempt = 1) {
     const request = {
         access_token: accessToken,
-        start_date: "2023-08-06",
-        end_date: "2024-08-25",
+        start_date: format(
+            add(new Date(), {
+                years: -1,
+            }),
+            "yyyy-MM-dd"
+        ),
+        end_date: format(new Date(), "yyyy-MM-dd"),
         options: {
             count: 500,
         },

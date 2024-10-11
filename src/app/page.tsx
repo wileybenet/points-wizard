@@ -7,6 +7,7 @@ import { Cards } from "@/app/utils/card";
 import { CardList } from "@/client/CardList";
 import plaidLogo from "@/resources/images/plaid.svg";
 import pointdexterLogo from "@/resources/images/pointdexter_logo_transparent.png";
+import { asMoney } from "./utils/formatters";
 
 export default async function App() {
     const cookieStore = cookies();
@@ -32,10 +33,7 @@ export default async function App() {
                     <LogOut />
                 </div>
                 <div className="results">
-                    <CardList
-                        totalSpent={Cards.totalSpent}
-                        pointMaps={Cards.pointMaps}
-                    />
+                    <CardList totalSpent={Cards.totalSpent} pointMaps={Cards.pointMaps} />
                     <div
                         style={{
                             marginBottom: "80px",
@@ -43,8 +41,9 @@ export default async function App() {
                             textAlign: "center",
                         }}
                     >
-                        Based on {Cards.transactions.length} transactions since{" "}
-                        {Cards.firstTransactionDate}
+                        Based on {Cards.transactions.length} transactions since {Cards.firstTransactionDate}
+                        <br />
+                        Total spent (annualized): ${asMoney(Cards.totalSpent)} (${asMoney(Cards.totalSpentAnnualized)})
                     </div>
                 </div>
             </>
@@ -75,12 +74,7 @@ export default async function App() {
                 <span className="wordmark">PointDexter</span>
             </div>
             <span className="plus">+</span>
-            <Image
-                src={plaidLogo}
-                alt="plaid"
-                height={200}
-                style={{ marginTop: "-10px" }}
-            />
+            <Image src={plaidLogo} alt="plaid" height={200} style={{ marginTop: "-10px" }} />
 
             {linkToken && <LinkAccount linkToken={linkToken} />}
             <div
@@ -95,8 +89,7 @@ export default async function App() {
                     <a href="https://plaid.com/what-is-plaid/" target="_blank">
                         Plaid
                     </a>{" "}
-                    to analyze your spending and caclulate the best credit card
-                    for you.
+                    to analyze your spending and caclulate the best credit card for you.
                 </p>
                 <p>We don&apos;t store your data on our servers. Ever.</p>
                 <p>Your data stays on your device in case you need it.</p>

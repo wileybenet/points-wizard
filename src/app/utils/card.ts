@@ -1,6 +1,7 @@
 import { Transaction } from "plaid";
 import { addPoints } from "../../server/actions";
 import { getTransactions } from "../../server/plaidClient";
+import { differenceInDays } from "date-fns/fp";
 
 const CARDS = [
     "amex-deltareserve",
@@ -47,7 +48,9 @@ export class Cards {
     static pointMaps: RewardStruct[] = [];
     static pointMapsIndex: { [key: string]: RewardStruct } = {};
     static totalSpent: number;
+    static totalSpentAnnualized: number;
     static firstTransactionDate: string;
+    static annualizedFactor: number;
     static async loadCardPointMaps() {
         Cards.pointMaps = await Promise.all(CARDS.map(addPoints));
         Cards.pointMaps.forEach((map) => {
@@ -66,12 +69,17 @@ export class Cards {
             ({ personal_finance_category }) =>
                 personal_finance_category?.detailed !== "LOAN_PAYMENTS_CREDIT_CARD_PAYMENT"
         );
+        const firstDate = new Date(Cards.transactions[0].date);
+        const lastDate = new Date(Cards.transactions[Cards.transactions.length - 1].date);
+        const durationDays = differenceInDays(lastDate, firstDate);
         Cards.totalSpent = Cards.transactions.reduce((a, x) => a + x.amount, 0);
+        Cards.annualizedFactor = 365 / durationDays;
+        Cards.totalSpentAnnualized = Cards.annualizedFactor * Cards.totalSpent;
         Cards.firstTransactionDate = Cards.transactions[Cards.transactions.length - 1].date;
     }
     static calculatePoints() {
         Cards.pointMaps.forEach((map) => {
-            map.pointsEarned = Cards.points(map.cardKey);
+            map.pointsEarned = Cards.points(map.cardKey) * Cards.annualizedFactor;
             map.dollarValue = (map.pointsEarned * map.baseSpendEarnValuation) / 100;
             map.estimatedValue = map.dollarValue - map.annualFee;
         });

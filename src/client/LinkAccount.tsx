@@ -17,11 +17,7 @@ export default function LinkAccount({ linkToken }: { linkToken: string }) {
 
     return (
         <div>
-            <button
-                className="link-account"
-                onClick={() => open()}
-                disabled={!ready}
-            >
+            <button className="link-account" onClick={() => open()} disabled={!ready}>
                 <span>Connect your credit card</span>
             </button>
         </div>
