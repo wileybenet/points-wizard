@@ -10,7 +10,7 @@ export default function LogOut() {
     }, []);
     return (
         <button onClick={clearCache}>
-            <span>Delete analysis</span>
+            <span>Finish analysis</span>
         </button>
     );
 }
