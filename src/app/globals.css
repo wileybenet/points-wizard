@@ -71,3 +71,8 @@ button span {
     align-items: center;
     flex-direction: column;
 }
+
+.footer {
+    padding: 10px;
+    text-align: center;
+}

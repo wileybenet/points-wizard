@@ -19,7 +19,10 @@ export default function RootLayout({
             <head>
                 <title>PointDexter - Your Pocket Protector</title>
             </head>
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                {children}
+                <div className="footer">PointDexter &copy; {new Date().getUTCFullYear()} Slothware LLC</div>
+            </body>
         </html>
     );
 }
