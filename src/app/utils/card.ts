@@ -8,7 +8,7 @@ const CARDS = [
     "amex-gold",
     "amex-platinum",
     "capitalone-venturex",
-    "chase-sapphire",
+    // "chase-sapphire",    no such thing anymore
     "chase-sapphirepreferred",
     "chase-sapphirereserve",
     "chase-unitedclubinfinite",
