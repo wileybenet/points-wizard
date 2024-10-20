@@ -8,6 +8,7 @@ import { CardList } from "@/client/CardList";
 import plaidLogo from "@/resources/images/plaid.svg";
 import pointdexterLogo from "@/resources/images/pointdexter_logo_transparent.png";
 import { asMoney } from "./utils/formatters";
+import { differenceInCalendarDays } from "date-fns";
 
 export default async function App() {
     const cookieStore = cookies();
@@ -33,6 +34,10 @@ export default async function App() {
                     <LogOut />
                 </div>
                 <div className="results">
+                    <div>
+                        We analyzed {Cards.transactions.length} transactions over the last{" "}
+                        {differenceInCalendarDays(new Date(), new Date(Cards.firstTransactionDate))} days
+                    </div>
                     <CardList totalSpent={Cards.totalSpent} pointMaps={Cards.pointMaps} />
                     <div
                         style={{
@@ -41,8 +46,6 @@ export default async function App() {
                             textAlign: "center",
                         }}
                     >
-                        Based on {Cards.transactions.length} transactions since {Cards.firstTransactionDate}
-                        <br />
                         Total spent (annualized): ${asMoney(Cards.totalSpent)} (${asMoney(Cards.totalSpentAnnualized)})
                     </div>
                 </div>
