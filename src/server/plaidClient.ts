@@ -63,17 +63,22 @@ export async function getTransactions(accessToken: string, attempt = 1) {
             count: 500,
         },
     };
+    let transactionCount = 0;
     try {
         const response = await plaidClient.transactionsGet(request);
         const { transactions, ...rest } = response.data;
-        if (transactions.length > 10) {
-            return transactions;
+        if (transactions.length > 1) {
+            if (transactionCount === transactions.length) {
+                return transactions;
+            }
+            transactionCount = transactions.length;
+            throw new Error("plaid still syncing from FI");
         }
-        throw new Error("not enough data");
+        throw new Error("not enough card data");
     } catch (err: any) {
-        if (attempt < 10) {
+        if (attempt < 15) {
             console.log(`failed, retrying #${attempt} (${err.message})`);
-            await sleep(attempt * 2000);
+            await sleep(attempt * 1000);
             return getTransactions(accessToken, attempt + 1);
         }
         throw err;
