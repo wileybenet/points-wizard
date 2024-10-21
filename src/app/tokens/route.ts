@@ -1,6 +1,6 @@
 import { delinkAccessTokens } from "@/server/actions";
 
-export async function POST() {
+export async function GET() {
     try {
         await delinkAccessTokens();
         return Response.json({ status: 200, body: "Delinked access tokens" });
