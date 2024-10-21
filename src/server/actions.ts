@@ -22,12 +22,7 @@ export async function exchangePublicToken(publicToken: string) {
         value: token,
         secure: true,
         httpOnly: true,
-    });
-    cookies().set({
-        name: "item_id",
-        value: token,
-        secure: true,
-        httpOnly: true,
+        expires: Date.now() + 8.64e7,
     });
 
     try {
@@ -58,6 +53,11 @@ export async function delinkAccessTokens() {
     }
     // If any keys weren't removed, leave them in the store
     kv.set(kvAccessTokenId, keys);
+}
+
+export async function delinkToken(token: string) {
+    await plaidClient.itemRemove({ access_token: token });
+    console.log("removed!");
 }
 
 export async function logOut() {
