@@ -13,9 +13,8 @@ import { differenceInCalendarDays } from "date-fns";
 export default async function App() {
     const cookieStore = cookies();
     const accessToken = cookieStore.get("access_token");
-    const itemId = cookieStore.get("item_id");
 
-    if (accessToken && itemId) {
+    if (accessToken) {
         await Cards.loadCardPointMaps();
         await Cards.loadTransactions(accessToken.value);
         Cards.calculatePoints();
