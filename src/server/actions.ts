@@ -43,11 +43,15 @@ export async function exchangePublicToken(publicToken: string) {
  */
 export async function delinkAccessTokens() {
     const keys: string[] = (await kv.get(kvAccessTokenId)) ?? [];
+    console.log("Keys: ", keys);
     for (const key of keys) {
         try {
+            console.log("Removing key: ", key);
             await plaidClient.itemRemove({ access_token: key });
+            console.log("Removed key: ", key);
             keys.splice(keys.indexOf(key), 1);
         } catch (err) {
+            console.log("Failed to remove key: ", key);
             console.error(err);
         }
     }
