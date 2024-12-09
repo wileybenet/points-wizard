@@ -18,7 +18,7 @@ export default async function App() {
         await Cards.loadCardPointMaps();
         await Cards.loadTransactions(accessToken.value);
         Cards.calculatePoints();
-        await Cards.calculateSpendByCategory();
+        Cards.calculateSpendByCategory();
 
         return (
             <>
@@ -111,7 +111,7 @@ function SpendingBreakdown() {
             }}
         >
             <h3>Your Spending</h3>
-            <div>
+            <div style={{ textAlign: "center" }}>
                 In the last{" "}
                 <strong>
                     {differenceInCalendarDays(
@@ -148,7 +148,7 @@ function SpendingBreakdown() {
                             .sort((a, b) => (a[1] > b[1] ? -1 : 1))
                             .map(([category, amount]) => (
                                 <tr key={category}>
-                                    <td>{category}</td>
+                                    <td>{formatCategoryName(category)}</td>
                                     <td>${asMoney(amount)}</td>
                                 </tr>
                             ))}
@@ -156,10 +156,18 @@ function SpendingBreakdown() {
                 </table>
             </div>
             <br />
-            <div>
-                We&apos;ve annulized your spending for the calculations below.
+            <div style={{ textAlign: "center" }}>
+                We&apos;ve annualized your spending for the calculations below.
             </div>
             <br />
         </div>
     );
+}
+
+function formatCategoryName(input: string): string {
+    return input
+        .toLowerCase()
+        .split("_")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
 }
