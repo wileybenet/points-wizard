@@ -7,7 +7,8 @@ import { asMoney } from "@/app/utils/formatters";
 
 type SortKey = "pointsEarned" | "dollarValue" | "estimatedValue" | "annualFee";
 
-const by = (key: SortKey) => (mapA: RewardStruct, mapB: RewardStruct) => mapB[key] - mapA[key];
+const by = (key: SortKey) => (mapA: RewardStruct, mapB: RewardStruct) =>
+    mapB[key] - mapA[key];
 
 interface Props {
     totalSpent: number;
@@ -18,13 +19,17 @@ export function CardList({ totalSpent, pointMaps }: Props) {
     const [sortKey, setSortKey]: [SortKey, any] = useState("estimatedValue");
     const sort = (key: SortKey) => () => setSortKey(key);
     return (
-        <div>
+        <div style={{ marginBottom: "80px" }}>
             <table style={{ borderWidth: 0 }}>
                 <thead>
                     <tr>
-                        <th style={{ textAlign: "left", padding: 5 }}>Credit Card</th>
-                        <th style={{ textAlign: "left", padding: 5 }}></th>
-                        <th style={{ textAlign: "right", padding: 5 }} onClick={sort("pointsEarned")}>
+                        <th style={{ textAlign: "left", padding: 5 }}>
+                            Credit Card
+                        </th>
+                        <th
+                            style={{ textAlign: "right", padding: 5 }}
+                            onClick={sort("pointsEarned")}
+                        >
                             Points
                         </th>
                         <th
@@ -77,18 +82,29 @@ export function CardList({ totalSpent, pointMaps }: Props) {
                                 isCashback,
                             }) => (
                                 <tr key={cardKey}>
-                                    <td style={{ padding: 5 }}>
-                                        <a href={cardUrl}>
-                                            <img src={cardImageUrl} alt={cardName} height={50} />
-                                        </a>
-                                    </td>
                                     <td
                                         style={{
                                             padding: 5,
-                                            textAlign: "left",
                                         }}
                                     >
-                                        {cardName}
+                                        <div>
+                                            <a
+                                                href={cardUrl}
+                                                style={{
+                                                    display: "flex",
+                                                    gap: "5px",
+                                                    alignItems: "center",
+                                                    width: "fit-content",
+                                                }}
+                                            >
+                                                <img
+                                                    src={cardImageUrl}
+                                                    alt={cardName}
+                                                    height={50}
+                                                />
+                                                {cardName}
+                                            </a>
+                                        </div>
                                     </td>
                                     <td
                                         style={{
@@ -96,7 +112,9 @@ export function CardList({ totalSpent, pointMaps }: Props) {
                                             textAlign: "right",
                                         }}
                                     >
-                                        {isCashback ? "" : asMoney(pointsEarned)}
+                                        {isCashback
+                                            ? ""
+                                            : asMoney(pointsEarned)}
                                     </td>
                                     <td
                                         style={{
@@ -134,7 +152,8 @@ export function CardList({ totalSpent, pointMaps }: Props) {
                                     >
                                         ${asMoney(dollarValue)}
                                         <br />- ${asMoney(annualFee)}
-                                        <br />= <b>${asMoney(estimatedValue)}</b>
+                                        <br />={" "}
+                                        <b>${asMoney(estimatedValue)}</b>
                                     </td>
                                 </tr>
                             )
